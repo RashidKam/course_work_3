@@ -48,10 +48,10 @@ def search_for_posts(query):
 
 
 def get_post_by_pk(pk):
+    '''Возвращет определенный пост'''
     posts = get_posts_all(file_posts)
     for post in posts:
         if int(pk) == int(post["pk"]):
             return post
 
-print(get_post_by_pk(8))
 
